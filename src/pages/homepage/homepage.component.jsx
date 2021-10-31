@@ -3,9 +3,9 @@ import Directory from "../../components/directory/directory.component";
 
 //functional component,
 //no lifecycle methods, no state
-const HomePage = ()=>(
+const HomePage = ({history})=>(
 <div className='homepage'>
-    <Directory></Directory>
+    <Directory history={history}></Directory>
 </div>
 )
 export default HomePage;
